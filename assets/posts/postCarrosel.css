@@ -1,0 +1,9 @@
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapperswiper-pagination {
+    justify-content: space-evenly;
+}

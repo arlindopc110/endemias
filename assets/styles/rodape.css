@@ -1,0 +1,161 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+}
+
+hr {
+    margin: 0;
+}
+
+.rodapé {
+    margin: 1em;
+    text-align: initial;
+
+
+}
+
+.lista-rodapé {
+    display: none;
+}
+
+.lista-rodapé_mobile {
+    margin: 2em;
+    justify-content: center;
+}
+
+.lista-rodapé__item {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+
+
+.container_mapa {
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.mapa {
+    width: 100%;
+    height: 30vh;
+}
+
+.logofinal {
+    margin-top: 2em;
+    width: 5em;
+    height: 5em;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        padding-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .logofinal {
+        display: block;
+    }
+
+    .logofinal {
+        margin-top: 2em;
+        width: 10em;
+        height: 10em;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .rodapé {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodapé {
+        display: block;
+        margin: 2em;
+    }
+
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+        cursor: pointer;
+    }
+
+
+
+    .lista-rodapé__item:hover {
+        background: var(--azul-degrade);
+        border-radius: 15px;
+    }
+
+    .lista-rodapé__link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.2em;
+    }       
+
+    .lista-rodapé__link:hover {
+        color: var(--branco);
+        transition: 0.2s all;
+    }
+
+    .lista-rodapé__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+    
+    .rodapé__titulo {
+        margin-top: 1.5em;
+        font-size: 24px;
+    }
+}
+
+
+

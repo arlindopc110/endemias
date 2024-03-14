@@ -1,0 +1,34 @@
+@import url("./assets/styles/header.css");
+@import url("./assets/styles/banner.css");
+@import url("./assets/styles/carrosel.css");
+@import url("./assets/styles/topicos.css");
+@import url("./assets/styles/rodape.css");
+@import url("./assets/styles/index.css");
+
+@import url("/assets/styles/slide.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
+    --laranja: #106294;
+    --azul-degrade: linear-gradient(97.54deg, #106294 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins", sans-serif;
+    --azul: #002F52;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+}
+

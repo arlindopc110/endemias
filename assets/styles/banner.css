@@ -1,0 +1,40 @@
+.banner {
+    display: flex;
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding-left: 5vh;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_logo {
+    width: 25vw;
+}
+
+.banner__titulo {
+    line-height: 1.5em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 0.2em 0;
+}
+
+/* código omitido */
+
+@media screen and (max-width: 1107px) {
+    .banner__titulo {
+        font-size: 1.5em;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        display: none;
+    }
+}
