@@ -1,11 +1,11 @@
-@import url("./assets/styles/header.css");
-@import url("./assets/styles/banner.css");
-@import url("./assets/styles/carrosel.css");
-@import url("./assets/styles/topicos.css");
-@import url("./assets/styles/rodape.css");
-@import url("./assets/styles/index.css");
+@import url("assets/styles/header.css");
+@import url("assets/styles/banner.css");
+@import url("assets/styles/carrosel.css");
+@import url("assets/styles/topicos.css");
+@import url("assets/styles/rodape.css");
+@import url("assets/styles/index.css");
 
-@import url("/assets/styles/slide.css");
+@import url("assets/styles/slide.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
