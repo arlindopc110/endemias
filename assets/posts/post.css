@@ -45,6 +45,10 @@
     width: 10em;
 }
 
+.swiper-wrapper {
+    margin-top: 1.5em;
+}
+
 
 @media screen and (max-width: 780px) {
     .banner {

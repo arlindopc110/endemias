@@ -65,6 +65,7 @@
 }
 
 .descricao__texto {
+    width: 15em;
     font-size: 14px;
 }
 
