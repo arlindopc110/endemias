@@ -39,14 +39,8 @@
     color: var(--branco);
 }
 
-
-
 .banner_logo-banner {
     width: 10em;
-}
-
-.swiper-wrapper {
-    margin-top: 1.5em;
 }
 
 
@@ -64,5 +58,10 @@
         text-align: left;
         font-size: 1em;
         font-weight: 300;
+    }
+
+    .post_imagem {
+        width: 20em;
+        margin-left: 2.3em;
     }
 }

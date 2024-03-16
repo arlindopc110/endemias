@@ -75,11 +75,16 @@
 
 .botoes__ancora {
     background-color: var(--laranja);
-    padding: 1em 2.2em;
+    padding: 1em 1.2em;
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
 }
+
+.content_post {
+    display: none;
+}
+
 
 /* código omitido */
 
@@ -99,6 +104,10 @@
         display: block;
         top: 60%;
     }
+
+    .post_imagem {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -106,4 +115,31 @@
     .texto_slide {
         display: none;
 }
-}
+
+@media screen and (max-width: 500px) {
+    .swiper-wrapper {
+        display: none;
+    }
+
+    .content_post {
+        display: block;
+    }
+
+    .slide_post {
+        justify-content: center;
+        text-align: center;
+        margin: 2em 1.5em 2em 1.5em;
+    }
+
+    .slide_post img { 
+        border-radius: 10px;
+        width: 18em;
+    }
+
+    .texto_slide {
+        display: block;
+        border-radius: 10px;
+        padding: 0.5em;
+    }
+}}
+

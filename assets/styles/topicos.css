@@ -30,8 +30,11 @@
 }
 
 .descricao_instagram {
-    width: 12vh;
-    margin-right: 3vh;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    width: 8vh;
+    height: 8vh;
+
 }
 
 /* código omitido */
