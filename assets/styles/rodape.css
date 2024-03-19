@@ -127,7 +127,15 @@ hr {
         cursor: pointer;
     }
 
+    .contact-section {
+        display: flex;
+        align-items: center;
+    }
 
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .lista-rodapé__item:hover {
         background: var(--azul-degrade);

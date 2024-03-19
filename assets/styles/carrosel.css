@@ -17,7 +17,7 @@
 }
 
 .swiper-slide:hover {
-    transform: scale(105%);
+    transform: scale(103%);
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -48,7 +48,7 @@
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 1em;
+    margin: 2em;
     padding: 1em;
 }
 
@@ -85,8 +85,14 @@
     display: none;
 }
 
-
-/* código omitido */
+.texto_slide {
+    background: var(--branco);
+    font-size: 1em;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    padding: 1.5em;
+    text-transform: uppercase;
+}
 
 @media screen and (min-width: 1024px) {
     .carrossel__titulo {
@@ -141,5 +147,7 @@
         border-radius: 10px;
         padding: 0.5em;
     }
-}}
+}
+}
+
 

@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/posts/post.css">
-    <link rel="stylesheet" href="assets/posts/postCarrosel.css">
+    <link rel="stylesheet" href="assets/styles/post.css">
 
     <title>Endemias</title>
 </head>
@@ -25,40 +24,42 @@
 <body>
     <header class="cabecalho">
         <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
-            </label>
+            <span onclick="hamburguer()" id="menuHambuguer" class="cabecalho__menu-hamburguer container__imagem"></span>
 
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Dengue</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Chikungunya</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Zica</a>
-                </li>
 
+            <ul class="lista-menu" id="lista-menu">
+                <li onclick="listagem()" id="categorias" class="lista-menu__titulo">Categorias</li>
+                <ul id="lista-mostrar">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Dengue</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Chikungunya</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Zica</a>
+                    </li>
+                </ul>
+
+                <li class="lista-menu__titulo">Informações</li>
+                <li class="lista-menu__titulo">Ações</li>
+                <li class="lista-menu__titulo">Contato</li>
             </ul>
             </ul>
 
             <img src="assets/img/logoE.png" alt="Logo da Alura" class="container__logo">
-            <h2 class="container__titulo-logo"><b class="container__titulo-logo-negrito">Setor de </b>Endemias</h2>
+            <a class="logo-name" href="index.html" target="_blank">
+                <h2 class="container__titulo-logo"><b class="container__titulo-logo-negrito">Setor de </b>Endemias</h2>
+            </a>
         </div>
 
         <!-- código omitido -->
 
         <ul class="opcoes">
-            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
-                <li class="opcoes__item">Informações</li>
-            </label>
 
-
-            <ul class="lista-menu .desktop">
+                <li id="listaDesk()" onclick="listarDesktop()" class="opcoes__item">Informações</li>
+ 
+            <ul id="listaDesktop" class="lista-menu .desktop">
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Dengue</a>
                 </li>
@@ -72,8 +73,8 @@
 
             <li class="opcoes__item"></a>Ações</li>
             <li class="opcoes__item"></a>Contato</li>
-      <!--   <li class="opcoes__item"></a>Estatísticas</li>  -->
-    </ul>
+            <!--   <li class="opcoes__item"></a>Estatísticas</li>  -->
+        </ul>
 
         <!-- código omitido -->
 
@@ -89,20 +90,27 @@
     </header>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Sessão na Câmara Municipal de Miraíma</h2>
-        
+
         <div class="swiper">
-                <div class="swiper-slide"><img src="assets/postsfinal/Captura de tela 2024-03-12 172719.png de tela 2024-03-12 172719.png" alt="">
-                    <img class="post_imagem-cima" src="assets/postsfinal/2.png" alt="">
-                </div>
+            <div class="imagemDeCima">
+                <img class="post_imagem-cima" src="assets/postsfinal/2.png" alt="">
             </div>
-            
+        </div>
+
         </div>
         <section class="banner">
-            <h2 class="banner__titulo">Sessão na Câmara Municipal de Miraíma (1 de Março de 2024) recebeu o Agente de Endemias Claudemir para discutir as ações de combate à dengue em resposta à crescente incidência de casos na região.
-                Foi discutido com vereadores e o público sobre a mobilização do dia “Dia D” que aconteceu no município no dia 10 de Março de 2024, além de explicar todo trabalho de ações educativas e conscientização que vem sendo feito no combate às arboviroses. É importante ressaltar os cuidados que devemos ter durante o período chuvoso para evitar a proliferação do Aedes. #todoscontraadengue
+            <h2 class="banner__titulo">Sessão na Câmara Municipal de Miraíma (1 de Março de 2024) recebeu o Agente de
+                Endemias Claudemir para discutir as ações de combate à dengue em resposta à crescente incidência de
+                casos na região.
+                Foi discutido com vereadores e o público sobre a mobilização do dia “Dia D” que aconteceu no município
+                no dia 10 de Março de 2024, além de explicar todo trabalho de ações educativas e conscientização que vem
+                sendo feito no combate às arboviroses. É importante ressaltar os cuidados que devemos ter durante o
+                período chuvoso para evitar a proliferação do Aedes. #todoscontraadengue
             </h2>
         </section>
-        <img class="post_imagem" src="assets/postsfinal/Captura de tela 2024-03-12 172719.png" alt="">
+        <div class="imagemDeBaixo">
+            <img class="post_imagem-baixo" src="assets/postsfinal/Captura de tela 2024-03-12 172719.png" alt="">
+        </div>
 
         <div class="card">
             <!--1ª LINHA-->
@@ -111,7 +119,8 @@
                 <div class="descricao">
                     <h3 class="descricao__titulo">Fique por dentro...</h3>
                     <h2 class="descricao__titulo-livro">Combate a dengue</h2>
-                    <p class="descricao__texto">Saiba sobre as últimas medidas de combate à dengue em sua região.</p>
+                    <p class="descricao__texto">Saiba sobre as últimas medidas de combate à dengue em sua região.<br>
+                    Nos siga no instagram</p>
                 </div>
                 <!--2 coluna-->
                 <img class="descricao_instagram" src="assets/img/instagram.png" alt="">
@@ -122,7 +131,6 @@
                 <!--1ª COLUNA-->
                 <ul class="botoes">
                     <li class="botoes__item"><img src="assets/img/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__item"><img src="assets/img/Compras.svg" alt="Adicionar no carrinho de compras">
                     </li>
                 </ul>
                 <!--2ª COLUNA-->
@@ -136,7 +144,7 @@
     <div class="content_post">
 
         <div class="slide_post"><a href="post.html">
-            <img src="assets/postsfinal/camara.jpg" alt=""></a>
+                <img src="assets/postsfinal/camara.jpg" alt=""></a>
             <h2 class="texto_slide">COMBATE À DENGUE EM DESTAQUE NA SESSÃO DA CÂMARA MUNICIPAL DE
                 MIRAÍMA(01/03/2024)</h2>
         </div>
@@ -155,7 +163,7 @@
 
         <div class="slide_post">
             <img src="assets/postsfinal/rádio.jpg" alt="">
-            <h2 class="texto_slide">Conversa na rádio Líder Gospel sobre o trabalho do agente de endemias, 
+            <h2 class="texto_slide">Conversa na rádio Líder Gospel sobre o trabalho do agente de endemias,
                 arboviroses e ações preventivas.</h2>
         </div>
 

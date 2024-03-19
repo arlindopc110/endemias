@@ -37,7 +37,10 @@
 
 }
 
-/* código omitido */
+.descricao_logo {
+    width: 12vh;
+    margin-right: 0vh;
+}
 
 @media screen and (min-width: 1024px) {
     .tópicos__titulo {
@@ -47,9 +50,4 @@
     .tópicos__link {
         font-size: 24px;
     }
-}
-
-.descricao_logo {
-    width: 12vh;
-    margin-right: 0vh;
 }

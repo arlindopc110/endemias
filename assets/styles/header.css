@@ -49,11 +49,6 @@
     display: none;
 }
 
-.container__categoria:checked~.menu_categorias {
-    display: block;
-}
-
-
 .lista-menu__titulo, 
 .lista-menu__item {
     width: 1em;
@@ -106,8 +101,12 @@
     display: none;
 }
 
-.opcoes__botao:checked~.lista-menu .desktop {
-    display: block;
+#lista-mostrar {
+    display: none;
+}
+
+#lista-menu {
+    display: none;
 }
 
 @media screen and (min-width: 520px) {
@@ -189,18 +188,6 @@
         font-size: 3vh;
     }
 
-
-    /* Estilos para a seção de contato */
-    .contact-section {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Estilos para o footer */
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .lista-menu__item {
@@ -209,4 +196,10 @@
 
 .lista-menu__item:hover {
     background: #3094ff2b;
+}
+
+.logo-name {
+    text-decoration: none;
+    font-style: none;
+    color: var(--preto);
 }
