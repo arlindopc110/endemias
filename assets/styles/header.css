@@ -12,7 +12,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed; /* Torna o menu fixo */
+    top: 0; /* Fixa o menu no topo da página */
+    width: 100%; /* Define a largura do menu como 100% da largura da tela */
+    padding: 10px 0; /* Espaçamento interno do menu */
+    z-index: 1000; /* Define a ordem de empilhamento do menu */
+    margin-bottom: 0.5em;
 }
 
 .container {
@@ -202,4 +207,12 @@
     text-decoration: none;
     font-style: none;
     color: var(--preto);
+}
+
+.espaco {
+    height: 4.8em;
+}
+
+.espaco-post {
+    height: 5rem;
 }

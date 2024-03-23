@@ -1,11 +1,10 @@
 .banner {
-    height: 20em;
     display: flex;
     background: var(--azul-degrade);
     color: var(--branco);
     text-align: center;
-    padding: 5vh 7vh 5vh 7vh;
-    margin: 2em 1em;
+    padding: 2vh 7vh 2vh 7vh;
+    margin: 1em 1em;
     align-items: center;
     text-align: center;
 }
@@ -83,12 +82,12 @@
     .post_imagem-cima {
         width: 70vw;
     }
+    
+    
 }
-
 @media screen and (max-width: 780px) {
     .banner {
-        padding: 5vh;
-        height: 30.5em;
+        padding: 4vh;
     }
     
     .banner_logo-banner {
@@ -108,4 +107,49 @@
     .swiper-pagination-bullet {
         display: none;
     }
+}
+
+.banner-dengue {
+    width: 70vw;
+    margin-top: 2em;
+}
+
+.banner-dengue-index {
+    width: 60vw;
+}
+
+.banner-dengue-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.2em;
+    padding: 0;
+}
+
+.conteudo_titulo{
+    color: var(--branco);
+    font-size: 2em;
+    text-align: center;
+    margin: 1em
+}
+
+.conteudo_paragrafo {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 1em;
+}
+
+.imagemDeCima {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-sintomas {
+    width: 35vmax;
+    margin-bottom: 1em;
+} 
+
+.logo_mira {
+    width: 1.6vw;
 }
